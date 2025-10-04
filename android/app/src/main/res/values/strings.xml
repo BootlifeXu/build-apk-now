@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">BuildApk</string>
+    <string name="title_activity_main">BuildApk</string>
+    <string name="package_name">com.buildapk.demo</string>
+    <string name="custom_url_scheme">com.buildapk.demo</string>
+</resources>
