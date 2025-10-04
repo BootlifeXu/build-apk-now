@@ -1,9 +1,5 @@
 {
   "appId": "com.buildapk.demo",
   "appName": "BuildApk",
-  "webDir": "dist",
-  "server": {
-    "url": "https://7ad5f3c3-9288-4b76-888f-84563ba72422.lovableproject.com?forceHideBadge=true",
-    "cleartext": true
-  }
+  "webDir": "dist"
 }
