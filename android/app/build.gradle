@@ -48,13 +48,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-
-signingConfigs {
-    release {
-        storeFile file("my-release-key.jks") // relative to android/app
-        storePassword "123456"
-        keyAlias "my-key-alias"
-        keyPassword "123456"
     }
 }
 
