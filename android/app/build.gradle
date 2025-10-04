@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId 'com.buildapk.demo'
-        minSdk 21
+        minSdk 23
         targetSdk 35
         versionCode 1
         versionName '1.0'
@@ -48,3 +48,20 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
+
+signingConfigs {
+    release {
+        storeFile file("my-release-key.jks") // relative to android/app
+        storePassword "123456"
+        keyAlias "my-key-alias"
+        keyPassword "123456"
+    }
+}
+
+buildTypes {
+    release {
+        minifyEnabled false
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        signingConfig signingConfigs.release
+    }
+}
